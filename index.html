@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Surya Residency Boys Hostel </title>
+       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="./css/home.css">
+</head>
+<body>
+
+
+<nav class="navbar navbar-toggleable-md  navbar-fixed-top container-fluid" >
+ 
+
+    <div class='navbar-header' >
+           
+        <a class='navbar-brand' href='/' > SURYA RESIDENCY</a>
+        
+        <div class="hamburger">
+         <button class="navbar-toggle collapsed pull-right" type="button" data-toggle="collapse" data-target="#menuitems" aria-controls="#menuitems" aria-expanded="false" aria-label="Toggle navigation"  >
+   <span class="glyphicon glyphicon-menu-hamburger"></span>
+
+ </button>
+ </div>
+</div>
+
+
+
+    <div class='collapse navbar-collapse' id="menuitems" >
+
+
+  </button>
+
+
+            <ul class='nav navbar-nav pull-right' >
+
+        
+            <li> <a href='#tariffTable' >  Tariff </a> </li>
+            <li> <a href='/faq' >  FAQs </a> </li>
+         
+             <li> <a href='#bookRoom' > Book A Room  </a> </li>
+            <li> <a href='/studentscorner' >  Students Corner </a> </li>
+            
+
+         
+
+
+
+            </ul>
+
+
+        </div>
+    
+    
+    </nav>
+    
+    
+    
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox">
+    <div class="item active">
+
+    	
+    <img src = "./img/workingonlaptop.jpg"> 
+      <!-- <div class="carousel-caption">
+        <h3>Studies First</h3>
+        <p>Our hostel has a study oriented environment</p>
+      </div> -->
+     
+    </div>
+
+    <div class="item">
+    
+      <img src="./img/holicolor.jpg" >
+      <!-- <div class="carousel-caption">
+        <h3>Party !</h3>
+        <p>Study hard , party harder</p>
+      </div> -->
+  </div>
+    
+
+    <div class="item">
+      <img src="./img/coffeeandbookscolortwo.jpg" >
+     <!--  <div class="carousel-caption">
+        <h3>Relax</h3>
+        <p>A calm environment to help you relax</p>
+      </div> -->
+    </div>
+  </div>
+
+  <!-- Left and right controls -->
+  <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#myCarousel" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right"></span>
+    <span class="sr-only">Next</span>
+  </a>
+
+</div>
+<div class="homePageContent">
+
+  <br></br>
+<div class="container">
+  
+  
+
+<section id="tariffTable"> 
+<h1> Welcome to Surya Hostel Indore ! </h1>
+<h3> Our current tariff structure applicable per head per month is as follows :</h3>
+<div class="row">
+  <div class="col-sm-8">
+
+                                                                                        
+  <!-- <div class="table-responsive">           -->
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th>Room Type</th>
+        <th>Tariff</th>
+        
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Double Occupancy with attached bathroom</td>
+        <td>Rs.2200/-</td>
+        
+      </tr>
+      <tr>
+        <td>Double Occupancy with common bathroom</td>
+        <td>Rs.1900/-</td>
+        
+      </tr>
+      <tr>
+        <td>Triple Occupancy with common bathroom</td>
+        <td>Rs.1600/-</td>
+        
+      </tr>
+      <tr>
+        <td>Single Occupancy with common bathroom</td>
+        <td>Rs.3500/-</td>
+        
+      </tr>
+    </tbody>
+  </table>
+  <!-- </div> -->
+</div>
+
+</div>
+</section>
+
+<section id = "bookRoom">
+<div class="row">
+<div class="col-sm-4">
+  <!-- <p> Hello  </p> -->
+
+
+        <form id="gform" role="form" method="POST"
+         action="https://script.google.com/macros/s/AKfycbxcEmOUIEHGFn7kEtJGZKTxmtpNQvxLiVJZCokeKvVgEyv4zYk/exec" >
+        <br style="clear:both">
+                    <h3  style="text-align: center;">Book Now</h3>
+            <div class="form-group">
+            <input type="text" class="form-control" id="name" name="name" placeholder="Name" required>
+          </div>
+          <div class="form-group">
+            <input type="text" class="form-control" id="email" name="email" placeholder="Email" required>
+          </div>
+          <div class="form-group">
+            <input type="text" class="form-control" id="mobile" name="mobile" placeholder="Mobile Number" required>
+          </div>
+                    <div class="form-group">
+                      <span> Arrival Date </span>
+            <input type="date" class="form-control" id="date" name="date" placeholder="arrival date"  required>
+          </div>
+                    <div class="form-group">
+                    <textarea class="form-control" type="textarea"  name="message" id="message" placeholder="Message" maxlength="140" rows="4"></textarea>
+                                         
+                    </div>
+            
+        <button type="button" id="submit" name="submit" class="btn btn-primary">Submit Form</button>
+        </form>
+  
+
+</div>
+
+
+
+<div class="col-sm-8" style="text-align: center; padding-top: 51px;">
+
+
+  <span  style="padding-top: 20px;"> View our rooms </span>
+
+    <div id="roomCarousel" class="carousel slide" data-ride="carousel"  >
+  <!-- Indicators -->
+
+
+  <ol class="carousel-indicators">
+    <li data-target="#roomCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#roomCarousel" data-slide-to="1"></li>
+    <li data-target="#roomCarousel" data-slide-to="2"></li>
+  </ol>
+
+
+
+  <!-- Wrapper for slides -->
+  <div  id="roominner" class="carousel-inner" role="listbox">
+
+    <div class="item active">
+
+      
+      <img src= "./img/workingonlaptop.jpg" >
+      <!-- <div class="carousel-caption">
+        <h3>Studies First</h3>
+        <p>Our hostel has a study oriented environment</p>
+      </div> -->
+     
+    </div>
+
+    <div class="item">
+    
+      <img src="./img/holicolor.jpg" >
+      <!-- <div class="carousel-caption">
+        <h3>Party !</h3>
+        <p>Study hard , party harder</p>
+      </div> -->
+  </div>
+    
+
+    <div class="item">
+      <img src="./img/coffeeandbookscolortwo.jpg" >
+     <!--  <div class="carousel-caption">
+        <h3>Relax</h3>
+        <p>A calm environment to help you relax</p>
+      </div> -->
+    </div>
+  </div>
+
+  <!-- Left and right controls -->
+  <a class="left carousel-control" href="#roomCarousel" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#roomCarousel" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right"></span>
+    <span class="sr-only">Next</span>
+  </a>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+<br> </br>
+<div class="row" >
+
+  <h3 style="text-align: center;  font-size: 45px; "> 4 reasons to choose us </h3>
+<hr style="width: 150px;"> </hr>
+<br> </br>
+  
+
+
+
+<div class="col-sm-3 ">
+  <span class="glyphicon glyphicon-education"> </span>
+  Student Only Hostel
+
+<br> </br> 
+
+<p class="fourreasons"> To create a study oriented environment away from problems like loud noise. Students help each other in studies and become friends for life </p>
+</div>
+<div class="col-sm-3">
+  <span class="glyphicon glyphicon-flash"></span>
+  Centrally located
+  <br> </br>
+
+  <p class="fourreasons"> Near all major coaching classes like Nahata,Pace and Kautilya Academy are at 10 minute walking distance along with many tiffin centres.</p>
+</div class="col-sm-3">
+
+<div class="col-sm-3">
+  <span class="glyphicon glyphicon-ok"></span>
+  Economical option
+  <br> </br>
+  <p class="fourreasons"> Fully furnished rooms starting from Rs.1600/- including electricity with no boundation for taking food from our hostel. Student can choose tiffin provider </p>
+</div>
+
+<div class="col-sm-3">
+  <span class="glyphicon glyphicon-thumbs-up"></span>
+    Safety and Facilities
+  <br> </br>
+  <p class="fourreasons"> CCTV monitored 24*7 passages with RO water available 24 hours a day. Each room has two beds,study tables,chairs and one almirah. </p>
+</div>
+
+</div>  
+
+
+<div class="row">
+
+ <h3 style="text-align: center;  font-size: 45px; ">  Visit the hostel </h3> 
+<hr style="width: 150px;"> </hr>
+
+<div id=""></div>
+
+</div>
+
+
+
+<div class="row">
+
+ <h3 style="text-align: center;  font-size: 45px; ">  Get in touch </h3> 
+<hr style="width: 150px;"> </hr>
+
+</div>
+
+<!-- 
+<span style="margin-top: 90px;"> View our rooms </span> -->
+</body>
+</html>
